@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-import { type QuoteStructure } from "../types";
+import { type QuoteStructure } from "../quotes/types";
 
 const quoteSchema = new Schema<QuoteStructure>({
   quote: {
