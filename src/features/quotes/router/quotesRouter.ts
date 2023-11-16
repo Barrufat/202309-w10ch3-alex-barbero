@@ -8,5 +8,6 @@ const quotesRepository = new QuotesMongooseRepository();
 const quotesController = new QuotesController(quotesRepository);
 
 quotesRouter.get("/", quotesController.getQuotes);
+quotesRouter.get("/:quoteId", quotesController.getQuoteById);
 
 export default quotesRouter;

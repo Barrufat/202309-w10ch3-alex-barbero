@@ -15,7 +15,9 @@ describe("", () => {
         json: jest.fn().mockReturnThis(),
       };
 
-      const quotesController = new QuotesController(quotesRepository);
+      const quotesController = new QuotesController(
+        quotesRepository as QuotesRepository,
+      );
 
       await quotesController.getQuotes(req as Request, res as Response);
 
