@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express";
 import { type QuotesRepository } from "../types.js";
-import QuotesController from "./QuotesController.js";
+import QuotesController from "./QuotesController";
 
 describe("Given a getQuotes of a QuotesController", () => {
   describe("When it recieves a response", () => {
