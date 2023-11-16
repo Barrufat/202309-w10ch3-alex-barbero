@@ -19,7 +19,12 @@
         "no-implicit-coercion": "off"
       }
     },
-    { "files": ["src/model/*.ts"] }
+    {
+      "files": ["src/**/model/*.ts"],
+      "rules": {
+        "@typescript-eslint/naming-convention": "off"
+      }
+    }
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
