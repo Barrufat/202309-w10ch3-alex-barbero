@@ -2,9 +2,9 @@ import { type Request, type Response } from "express";
 import { type QuotesRepository } from "../types.js";
 import QuotesController from "./QuotesController";
 
-describe("", () => {
-  describe("", () => {
-    test("", async () => {
+describe("Given a getQuotes of a QuotesController", () => {
+  describe("When it recieves a response", () => {
+    test("Then it should call the method status of the response with '200' ", async () => {
       const quotesRepository: Pick<QuotesRepository, "getQuotes"> = {
         getQuotes: jest.fn(),
       };
